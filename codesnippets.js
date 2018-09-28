@@ -52,3 +52,47 @@ ReactDOM.render(
   document.getElementById('root')
 );
 `
+
+export const componentWithState = `
+class Counter extends React.Component {
+  state = {
+    counter: 0
+  };
+
+  render() {
+    return (
+      <div>
+        Counter : {this.state.counter}
+      </div>
+    )
+  }
+}
+`
+
+export const counterComponent = `
+class Counter extends React.Component {
+  state = {
+    counter: 0
+  };
+
+  handleCountUp = e => {
+    e.preventDefault();
+    this.setState({counter: this.state.counter + 1});
+  }
+
+  handleCountDown = e => {
+    e.preventDefault();
+    this.setState({counter: this.state.counter - 1});
+  }
+
+  render() {
+    return (
+      <div>
+        Counter : {this.state.counter}
+        <a onClick={this.handleCountUp}>+</a>
+        <a onClick={this.handleCountDown}>-</a>
+      </div>
+    )
+  }
+}
+`

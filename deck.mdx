@@ -4,6 +4,7 @@ export { default as theme } from './theme'
 import {CodeBlock} from './components/CodeBlock'
 import BlueLayout from './components/BlueLayout'
 import {ComponentBasedContent} from './components/ComponentBasedContent'
+import Counter from './components/Counter'
 import {
   installCra,
   helloWorldComponent,
@@ -11,7 +12,9 @@ import {
   withoutJsxExample,
   functionalComponent,
   classComponent,
-  renderingAComponent
+  renderingAComponent,
+  componentWithState,
+  counterComponent
 } from './codesnippets'
 
 <Head>
@@ -28,6 +31,14 @@ ReactJS Workshop
 
 ---
 
+## Persiapan
+
+- Daftar Github
+- Daftar Netlify (bisa dengan github)
+- Install NodeJS
+
+---
+
 ## Apa itu React ?
 
 React adalah *library* untuk membuat *user interface*
@@ -41,6 +52,10 @@ React adalah *library* untuk membuat *user interface*
 </Appear>
 
 ---
+
+## Declarative
+
+Membuat kode lebih mudah di mengerti dan di-debug
 
 ## Component Based
 
@@ -118,3 +133,29 @@ React 360 (VR), React Native (Android & iOS), Node
 </CodeBlock>
 
 Ingatlah kalau element hanyalah sebuah object jadi bisa disimpan di variable
+
+---
+
+*State* sama dengan *props* namun bersifat *private* dan dikontrol penuh oleh *Component* (dapat diubah)
+
+---
+
+## Menampilkan State
+
+<CodeBlock language="jsx">
+{componentWithState}
+</CodeBlock>
+
+---
+
+## Event handling
+
+<CodeBlock language="jsx" fontSize="18px">
+{counterComponent}
+</CodeBlock>
+
+---
+
+## Contoh Component dengan State
+
+<Counter />
