@@ -8,6 +8,23 @@ create-react-app "nama_folder"
 npx create-react-app "nama_folder"
 `
 
+export const declarativeCode = `
+const App = () => (
+  <Tabs>
+    <Tabs.List>
+      <Tabs.Tab>Tab 1</Tabs.Tab>
+      <Tabs.Tab isDisabled>Tab 2</Tabs.Tab>
+      <Tabs.Tab>Tab 3</Tabs.Tab>
+    </Tabs.List>
+    <Tabs.Panels>
+      <Tabs.Panel>Content 1</Tabs.Panel>
+      <Tabs.Panel>Content 2</Tabs.Panel>
+      <Tabs.Panel>Content 3</Tabs.Panel>
+    </Tabs.Panels>
+  </Tabs>
+)
+`
+
 export const helloWorldComponent = `
 ReactDOM.render(
   <h1>Hello, world!</h1>,
@@ -96,3 +113,4 @@ class Counter extends React.Component {
   }
 }
 `
+
