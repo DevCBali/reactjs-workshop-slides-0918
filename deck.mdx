@@ -35,8 +35,8 @@ ReactJS Workshop
 ## Persiapan
 
 - Daftar Github
-- Daftar Netlify (bisa dengan github)
 - Install NodeJS
+- Install React dev tools (tersedia di Chrome dan Firefox)
 
 ---
 
@@ -134,7 +134,7 @@ React 360 (VR), React Native (Android & iOS), Node
 
 ## Menampilkan Component
 
-<CodeBlock language="jsx">
+<CodeBlock language="jsx" fontSize="20px">
 {renderingAComponent}
 </CodeBlock>
 
@@ -165,3 +165,38 @@ Ingatlah kalau element hanyalah sebuah object jadi bisa disimpan di variable
 ## Contoh Component dengan State
 
 <Counter />
+
+---
+
+## React Lifecycle
+
+| Mounting      |Updating       | Unmounting |
+| ------------- |:-------------:| -----:|
+| contructor | shouldComponentUpdate| componentWillUnmount|
+| render| render||
+| componentDidMount| componentDidUpdate||
+
+---
+
+## Mulai koding
+
+1. `npm install -g create-react-app`
+2. `create-react-app shopping-cart`
+3. Buka link [https://github.com/DevCBali/react-shopping-cart-workshop](https://github.com/DevCBali/react-shopping-cart-workshop)
+
+---
+
+## Deploy ke Netlify
+
+1. Push project ke github masing-masing
+2. Buat akun Netlify (bisa dengan github)
+3. Deploy
+
+---
+
+## React lebih lanjut
+
+- ES6 (closure, high-order function, arrow function, class, destructure)
+- Functional Programming
+- Router (React Router, Reach Router)
+- Data Management (Redux, Mobx, Apollo, ...)
